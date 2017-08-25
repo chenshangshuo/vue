@@ -4,24 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import 'normalize.css'
 import './assets/reset.scss'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
+
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
-Vue.component('Jack', {
-  template: '<p>I am {{name}}</p>',
-  data(){
-    return {
-      name: 'chenshangshuo'
-    }
-  }
-})   /*注册一个全局组件*/
-
-
 
 new Vue({
-  el: '#ap', //容器
+  el: '#ap',
   template: '<pp/>',  //模板
   // components: { App }   //组件
   components: {
