@@ -2,7 +2,7 @@
 //（仅运行时或独立）已在webpack.base.conf中设置别名。
 import Vue from 'vue'
 import App from './App'
-import 'normalize.css'
+import 'normalize.css/normalize.css'
 import './assets/reset.scss'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'

@@ -14,7 +14,7 @@ import Topbar from './components/Topbar.vue'
 import Preview from './components/Preview.vue'
 import Editor from './components/Editor.vue'
 export default {
-  data: function(){
+  data: function () {
     return {
       previewModel: false,
       resume:{
@@ -116,8 +116,4 @@ main{
 .previewModel #exitpreview{
   display: block;
 }
-
-
-
-
 </style>

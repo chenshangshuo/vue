@@ -43,6 +43,7 @@
       arrayEditor,
       contactEditor
     },
+
     props: ['resume'],
     data: function(){
       return {

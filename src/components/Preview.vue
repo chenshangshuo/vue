@@ -1,35 +1,53 @@
 <template>
   <div id="preview">
-    <h1>{{resume.profile.name || '请填写姓名'}}</h1>
+    <h2>{{resume.profile.name || '请填写姓名'}}</h2>
     <p>{{resume.profile.city || '请填写城市'}} | {{resume.profile.birth || '请填写出生年月'}}</p>
-
+    <p></p>
     <hr>
     <section v-if="filter(resume.projectsExperience).length > 0">
       <!-- {{filter(resume.projectsExperience)}} -->
-      <h2>项目</h2>
+      <h2>项目经历</h2>
       <ul>
         <li v-for="project in filter(resume.projectsExperience)">
-          {{project.name}}
-          {{project.content}}
+          <p>{{project.name}} : {{project.content}}</p>
         </li>
       </ul>
     </section>
+    <hr>
     <section v-if="filter(resume.workExperience).length > 0">
-      <h2>项目</h2>
+      <h2>工作经历</h2>
       <ul>
         <li v-for="work in filter(resume.workExperience)">
-          {{work.company}}
-          {{work.content}}
+          <p>{{work.company}} : {{work.content}}</p>
         </li>
       </ul>
     </section>
+    <hr>
+    <section v-if="filter(resume.studyExperience).length > 0">
+      <h2>教育经历</h2>
+      <ul>
+        <li v-for="study in filter(resume.studyExperience)">
+          <p>{{study.school}}</p>
+          <p>{{study.duration}} : {{study.degree}}</p>
+        </li>
+      </ul>
+    </section>
+    <hr>
+    <section v-if="filter(resume.honorExperience).length > 0">
+      <h2>项目</h2>
+      <ul>
+        <li v-for="honor in filter(resume.honorExperience)">
+          {{honor.content}}
+        </li>
+      </ul>
+    </section>
+    <h2>{{resume.contact.phone || '请填写联系电话'}}</h2>
+    <p>{{resume.contact.email || '请填写邮箱地址'}} | {{resume.contact.email || '请填写微信'}}</p>
+    <p></p>
+    <hr>
   </div>
 </template>
-<style>
-  #preview{
-    min-height: 100px;
-  }
-</style>
+
 <script>
   export default{
     props: ['resume'],
@@ -52,3 +70,18 @@
     }
   }
 </script>
+
+
+<style>
+  #preview{
+    padding: 24px;
+    min-height: 100px;
+  }
+  h2{
+    margin: 16px 0;
+  }
+  p{
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+</style>
