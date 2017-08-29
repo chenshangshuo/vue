@@ -75,7 +75,7 @@ body,html{
   box-shadow: 0 0 3px hsla(0,0,0,0.5);
 }
 
-main{
+#app main{
   display: flex;
   background: #DDD;
   flex: 1;
@@ -96,24 +96,24 @@ main{
   overflow: hidden;
   }
 }
-#exitpreview{
+#app #exitpreview{
   display: none;
   position: fixed;
   bottom: 32px;
   right: 40px;
 }
 
-.previewModel > #topbar{
+#app .previewModel > #topbar{
   display: none;
 }
-.previewModel #editor{
+#app .previewModel #editor{
   display: none;
 }
-.previewModel #preview{
+#app .previewModel #preview{
   max-width:800px;
   margin: 32px auto;
 }
-.previewModel #exitpreview{
+#app .previewModel #exitpreview{
   display: block;
 }
 </style>
