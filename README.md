@@ -1,5 +1,5 @@
 # 用Vue制作在线简历
-
+[预览地址](https://chenshangshuo.github.io/vue/dist/)
 > A Vue.js project
 
 ## Build Setup
