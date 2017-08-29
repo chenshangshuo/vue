@@ -41,6 +41,7 @@
         </li>
       </ul>
     </section>
+    <hr>
     <h2>{{resume.contact.phone || '请填写联系电话'}}</h2>
     <p>{{resume.contact.email || '请填写邮箱地址'}} | {{resume.contact.email || '请填写微信'}}</p>
     <p></p>

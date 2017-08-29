@@ -24,16 +24,16 @@ export default {
           birth: ''
         },
         workExperience: [
-          {company: '', content: ''},
+          {company: 'xx公司', content: 'web前端开发'},
         ],
         studyExperience: [
-          {school: '', duration: '', degree: ''}
+          {school: 'xx工业大学', duration: '2011-2015', degree: '学士'}
         ],
         projectsExperience: [
-          {name: '', content: ''}
+          {name: '建站', content: 'js组件封装、css3动画'}
         ],
         honorExperience: [
-          {content: ''}
+          {content: 'xx数学竞赛'}
         ],
         contact: {
           phone: '',
@@ -93,7 +93,7 @@ body,html{
   background: #fff;
   box-shadow: 0 0 3px hsla(0,0,0,0.5);
   border-radius: 3px;
-  overflow: hidden;
+  overflow: auto;
   }
 }
 #app #exitpreview{
@@ -103,17 +103,17 @@ body,html{
   right: 40px;
 }
 
-#app .previewModel > #topbar{
+#app.previewModel > #topbar{
   display: none;
 }
-#app .previewModel #editor{
+#app.previewModel #editor{
   display: none;
 }
-#app .previewModel #preview{
+#app.previewModel #preview{
   max-width:800px;
   margin: 32px auto;
 }
-#app .previewModel #exitpreview{
+#app.previewModel #exitpreview{
   display: block;
 }
 </style>
